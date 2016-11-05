@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="460.0" prefWidth="1021.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="timedilataion.view.controller.StartController">
+   <children>
+      <Slider fx:id="timeSlider" blockIncrement="1.0" layoutX="79.0" layoutY="42.0" majorTickUnit="50.0" max="365.0" minorTickCount="4" prefHeight="24.0" prefWidth="259.0" showTickLabels="true" showTickMarks="true" value="1.0" />
+      <Slider fx:id="time0Slider" blockIncrement="1.0" layoutX="79.0" layoutY="99.0" majorTickUnit="50.0" max="365.0" minorTickCount="4" prefHeight="14.0" prefWidth="259.0" showTickLabels="true" showTickMarks="true" value="1.0" />
+      <Slider fx:id="speedSlider" layoutX="79.0" layoutY="170.0" majorTickUnit="50.0" max="299.0" minorTickCount="4" prefHeight="14.0" prefWidth="259.0" showTickLabels="true" showTickMarks="true" value="1.0" />
+      <Slider fx:id="massSlider" layoutX="78.0" layoutY="256.0" majorTickUnit="100.0" max="1000.0" minorTickCount="1" prefHeight="14.0" prefWidth="259.0" showTickLabels="true" showTickMarks="true" value="1.0" />
+      <Label layoutX="15.0" layoutY="46.0" text="Czas T" textFill="#02f711">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="98.0" text="Czas To" textFill="#3403f8">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="15.0" layoutY="169.0" text="Prędkość" textFill="#fa0505">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="14.0" layoutY="255.0" text="Masa" textFill="#ff7b00">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Slider fx:id="radiusSlider" layoutX="78.0" layoutY="320.0" majorTickUnit="100.0" max="1000.0" minorTickCount="1" prefHeight="14.0" prefWidth="259.0" showTickLabels="true" showTickMarks="true" value="1.0" />
+      <Label layoutX="15.0" layoutY="319.0" text="Promień" textFill="#00f2ff">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Separator layoutX="487.0" layoutY="1.0" orientation="VERTICAL" prefHeight="460.0" prefWidth="4.0" />
+      <LineChart fx:id="timeDylatationChart" layoutX="513.0" layoutY="18.0" title="Dylatacja czasu">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <Label layoutX="87.0" layoutY="14.0" text="Dylatacja czasu">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="87.0" layoutY="222.0" text="Zależna od grawitacji">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Separator layoutX="7.0" layoutY="356.0" prefHeight="14.0" prefWidth="482.0" />
+      <Label layoutX="155.0" layoutY="370.0" text="Jednostki w ukladzi SI">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="390.0" text="Czas" />
+      <Label layoutX="116.0" layoutY="390.0" text="Odległość" />
+      <Label layoutX="208.0" layoutY="391.0" text="Masa" />
+      <ChoiceBox fx:id="timeBox" layoutX="14.0" layoutY="416.0" prefHeight="25.0" prefWidth="88.0" />
+      <ChoiceBox fx:id="distanceBox" layoutX="111.0" layoutY="416.0" prefHeight="25.0" prefWidth="88.0" />
+      <ChoiceBox fx:id="massBox" layoutX="208.0" layoutY="416.0" prefHeight="25.0" prefWidth="88.0" />
+      <Label fx:id="timeValueLabel" layoutX="362.0" layoutY="39.0" text="Label" />
+      <Label fx:id="time0ValueLabel" layoutX="362.0" layoutY="98.0" text="Label" />
+      <Label fx:id="speedValueLabel" layoutX="362.0" layoutY="169.0" text="Label" />
+      <Label fx:id="massValueLabel" layoutX="362.0" layoutY="255.0" text="Label" />
+      <Label fx:id="radiusValueLabel" layoutX="362.0" layoutY="319.0" text="Label" />
+      <Label layoutX="88.0" layoutY="138.0" text="Zależna od prędkości">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
