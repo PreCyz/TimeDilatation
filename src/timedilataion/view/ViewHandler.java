@@ -5,7 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import static timedilataion.view.fxml.FXML.START;
+import timedilataion.view.fxml.FXML;
 
 /**
  * @author Gawa [Paweł Gawędzki]
@@ -22,7 +22,7 @@ public class ViewHandler {
     }
     
     public void launchView() throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource(START.path()));
+        Parent root = FXMLLoader.load(FXML.START_VIEW.url());
         
         Scene scene = new Scene(root);
         
