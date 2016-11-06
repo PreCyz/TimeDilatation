@@ -1,11 +1,12 @@
-package timedilataion.calculations.units;
+package timedilataion.calculation.unit;
 
+import timedilataion.calculation.unit.TimeUnit;
 import java.math.BigDecimal;
 import java.math.MathContext;
 import org.junit.After;
 import org.junit.Test;
 import static org.junit.Assert.*;
-import static timedilataion.calculations.units.TimeUnit.*;
+import static timedilataion.calculation.unit.TimeUnit.*;
 
 /**
  * @author Gawa [Paweł Gawędzki]
